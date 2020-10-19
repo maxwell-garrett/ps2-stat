@@ -21,7 +21,7 @@ library(survey)
 library(knitr)
 
 
-setwd("C:/Users/Max/OneDrive - University of Toronto/4th Year/Semester 1/STA304/Problem Set 2")
+setwd(".")
 data <- read_csv("gss.csv")
 
 data <- data %>% filter(vis_minority != "Don't know") %>% mutate(vis_minority = factor(vis_minority))
